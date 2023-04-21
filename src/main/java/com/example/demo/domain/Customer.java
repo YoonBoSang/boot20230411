@@ -4,8 +4,8 @@ import lombok.*;
 
 @Data
 public class Customer {
-	private String customername;
-	private int customerid;
+	private String customerName;
+	private int customerId;
 	private String address;
 	private String contactName;
 	private String city;
