@@ -56,7 +56,6 @@ public class Controller24 {
 	@RequestMapping("link6")
 	public void method6(Integer id, Model model) {
 		Customer customer = mapper.sql5(id);
-		System.out.println(customer);
 		model.addAttribute("customer",customer);
 	}
 	
