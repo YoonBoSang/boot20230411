@@ -111,7 +111,7 @@ public class Controller25 {
 	@GetMapping("link16")
 	public void method16(@RequestParam("email") String email,
 			@RequestParam("location") String location) {
-		System.out.println("email: " + email);
-		System.out.println("location: " + location);
+//		System.out.println("email: " + email);
+//		System.out.println("location: " + location);
 	}
 }

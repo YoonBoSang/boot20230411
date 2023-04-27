@@ -47,8 +47,8 @@ public class Controller13 {
 //					System.out.println(id + ":" + name);
 
 					Customer customer = new Customer();
-					customer.setId(id);
-					customer.setName(name);
+					customer.setCustomerId(id);
+					customer.setCustomerName(name);
 					customer.setAddress(rs.getString("address"));
 					obj.add(customer);
 				}
@@ -107,9 +107,9 @@ public class Controller13 {
 		try (con; stmt; rs;) {
 			while (rs.next()) {
 				Customer customer = new Customer();
-				customer.setId(rs.getInt("customerId"));
+				customer.setCustomerId(rs.getInt("customerId"));
 				customer.setAddress(rs.getString("address"));
-				customer.setName(rs.getString("customerName"));
+				customer.setCustomerName(rs.getString("customerName"));
 
 				list.add(customer);
 			}
@@ -136,9 +136,9 @@ public class Controller13 {
 		try (con; stmt; rs;) {
 			while (rs.next()) {
 				Customer customer = new Customer();
-				customer.setId(rs.getInt("customerId"));
+				customer.setCustomerId(rs.getInt("customerId"));
 				customer.setAddress(rs.getString("address"));
-				customer.setName(rs.getString("customerName"));
+				customer.setCustomerName(rs.getString("customerName"));
 				list.add(customer);
 			}
 		}
