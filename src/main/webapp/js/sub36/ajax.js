@@ -123,8 +123,9 @@ $("#btn9").click(function() {
 	const data = {
 		name: $("#inputName2").val(),
 		email: $("#inputEmail2").val(),
-		score: $("#inputScore2").val(),
-		married: $("#inputMarried2").val()
+		score: $("#inputScore2").val(),			
+//		married: $('input:radio[name=married]:checked').val()
+		married: document.querySelector("#inputmarried2").checked
 	};
 	$.ajax("/sub36/link2", {
 		method: "post",
